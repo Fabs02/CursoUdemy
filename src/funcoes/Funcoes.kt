@@ -22,4 +22,3 @@ Instâncias de classes:
 Uma função capaz de retornar um tipo de dado resultante de uma instância de uma classe.
 
 */
-
