@@ -2,7 +2,7 @@
 
 Olá, seja bem-vindo(a)! 😄
 
-Este repositório foi criado com o intuito de servir como um local de anotações para a realização do curso e como material de estudo.<br>
+Este repositório foi criado com o intuito de servir como um local de anotações para a realização do curso e como material de estudo.
 Sempre que eu avançar no curso e realizar as atividades propostas, irei atualizá-lo!
 
 ## Sobre o Kotlin
