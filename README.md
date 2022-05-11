@@ -9,4 +9,4 @@ Sempre que eu avançar no curso e realizar as atividades propostas, irei atualiz
 
 O Kotlin é uma linguagem orientada a objetos e de tipagem estática, criada pela JetBrains em 2011. 
 
-## Índice
+## Índice 📙
