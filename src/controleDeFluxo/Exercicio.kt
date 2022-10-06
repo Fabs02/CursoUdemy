@@ -44,6 +44,7 @@ fun bonus(cargo: String): Float {
 }
 */
 
+
 fun main() {
     val bonus = bonus("Gerente")
     println(bonus)
