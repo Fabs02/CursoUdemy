@@ -1,7 +1,7 @@
 package funcoes
 
 fun main() {
-    
+    println(div(12.0f, 3.0f))
 }
 
 fun soma (a: Int, b: Int): Int {
@@ -10,7 +10,7 @@ fun soma (a: Int, b: Int): Int {
 
 /*Forma simplificada:
 
-fun soma (a: Int, b: Int): Int = a + b
+fun soma (a: Int, b: Int) = a + b
 
  */
 
@@ -18,7 +18,7 @@ fun div (a: Float, b: Float): Float {
     return a / b
 }
 
-/*Um pouco mais simplificada:
+/*Forma simplificada:
 
 fun div (a: Float, b: Float) = a / b
 
