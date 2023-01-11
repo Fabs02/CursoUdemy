@@ -1,24 +1,40 @@
 package controleDeFluxo
 
-/*
-1 - Escreva um programa para ajudar a empresa XPTO calcular o bônus que os funcionários receberão no final
-do ano. Os bônus são classificados por cargo.
-a. Gerentes recebem R$ 2.000,00
-b. Coordenadores recebem R$ 1.500,00
-c. Engenheiros de software recebem R$ 1.000,00
-d. Estagiários recebem R$ 500,00
-*/
+fun main() {
+    val bonus = ex1("Gerente")
+    println(bonus)
 
-fun bonus(cargo: String): Float {
+    val bonus2 = ex2("Coordenador", 2)
+    println(bonus2)
+
+    val a = false
+    val b = false
+    val c = true
+    val d = true
+
+    println(a && b && c && d)
+    //false && false && true && true = false
+
+    println(!a && !b && (c && d))
+    //true && true && true = true
+
+    println(a && ((b || c) || d))
+    //false && true = false
+
+    println(a || ((!b && c) || !d))
+    // false || true = true
+}
+
+fun ex1(cargo: String): Float {
     var bonus = 0f
 
-    if (cargo == "Gerente")
+    if (cargo == "Gerente") {
         bonus = 2000f
-    else if (cargo == "Coordenadores") {
+    } else if (cargo == "Coordenador") {
         bonus = 1500f
     } else if (cargo == "Engenheiro de software") {
         bonus = 1000f
-    } else if (cargo == "Estagiário") {
+    } else if (cargo == "Estagiários") {
         bonus = 500f
     }
 
@@ -44,8 +60,26 @@ fun bonus(cargo: String): Float {
 }
 */
 
+fun ex2(cargo: String, tempoExp: Int): Float {
+    var bonus = 0f
 
-fun main() {
-    val bonus = bonus("Gerente")
-    println(bonus)
+    if (cargo == "Gerente") {
+        if (tempoExp < 2) {
+            bonus = 2000f
+        } else {
+            bonus = 3000f
+        }
+    } else if (cargo == "Coordenador") {
+        if (tempoExp < 1) {
+            bonus = 1500f
+        } else {
+            bonus = 1800f
+        }
+    } else if (cargo == "Engenheiro de software") {
+        bonus = 1000f
+    } else if (cargo == "Estagiários") {
+        bonus = 500f
+    }
+
+    return bonus
 }
