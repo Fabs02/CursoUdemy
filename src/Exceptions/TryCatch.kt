@@ -1,11 +1,26 @@
 package Exceptions
 
+/* Exemplo simples Try Catch
+fun main() {
+
+    try {
+        val s: String? = null
+    } catch(e: NullPointerException) {
+        print("Valor nulo!!")
+    }
+
+    println("FIM")
+
+}
+ */
+
 fun main() {
 
     try {
         //return - Se escrever um return logo no início, o finally ainda é executado.
         val s: String? = null
         println(s!!.length)
+
 
         val n = 10 / 0
     } catch (e: NullPointerException) {
@@ -20,5 +35,4 @@ fun main() {
     }
 
     println("Fim")
-
 }
