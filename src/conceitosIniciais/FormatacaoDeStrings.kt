@@ -5,7 +5,7 @@ fun main() {
 
     println("Olá, $nome $sobrenome") //Interpolação, usar uma variável dentro da string
 
-    nome.length //Tamanho da string
+    println("$nome.lenght") //Tamanho da string
 
     var str = "Olá, tudo bem? \n" +
             "O meu nome é Fabricio " +
