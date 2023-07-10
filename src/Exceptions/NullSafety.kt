@@ -1,4 +1,4 @@
-package Exceptions
+package exceptions
 
 // Null safety - Tenta previnir erros de variáveis nulas, como NullPointerException, com ajuda de:
 // ? - O "?" diz para o compilador tratar qualquer erro nulo que ocorrer. Imprimindo null e não deixando o programa quebrar.
