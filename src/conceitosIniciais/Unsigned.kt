@@ -1,6 +1,7 @@
 fun main() {
 
     //Unsigned = Sem sinal / Perde a parte negativa
+    // Não existe Unsigned para Double e Float, apenas para os números inteiros
 
     println("ULong MAX ${ULong.MAX_VALUE} - MIN ${Long.MIN_VALUE}")
     println("UInt MAX ${UInt.MAX_VALUE} - MIN ${Int.MIN_VALUE}")

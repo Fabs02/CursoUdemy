@@ -1,17 +1,17 @@
 /**
- Valores reais
- Type   Bit
- Double 64
- Float  32
+Valores reais
+Type   Bit
+Double 64
+Float  32
 
- Valores ínteiros
- Long   64
- Int    32
- Short  16
- Byte   8
- Boolean
- String
- Char
+Valores ínteiros
+Long   64
+Int    32
+Short  16
+Byte   8
+Boolean
+String
+Char
  */
 
 fun main() {
@@ -20,6 +20,14 @@ fun main() {
     var string = "Olá mundo!"
     var boolean = true
     var boolean2 = false
+
+    var double: Double = 1000.0
+    var float: Float = 45f
+
+    var long: Long = 10L
+    var int: Int = 70
+    var short: Short = 45
+    var byte: Byte = 3
 
     println("Double MAX ${Double.MAX_VALUE} - MIN ${Double.MIN_VALUE}")
     println("Float MAX ${Float.MAX_VALUE} - MIN ${Float.MIN_VALUE}")
