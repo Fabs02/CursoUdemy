@@ -1,15 +1,15 @@
 package funcoes
 
 fun main() {
-    converterAno(2)
+    println (converterAno(2))
 
-    str()
+    println (str("Hello World!"))
 
-    cuboInt()
+    println (cuboInt(4))
 
-    convMilhasKM()
+    println (convMilhasKM(2.0f, 1.6f))
 
-    trocaLetras("Ola pessoas!")
+    println(trocaLetras("Ola pessoas!"))
 }
 
 fun converterAno(ano: Int) {
@@ -37,17 +37,28 @@ fun converterAno(ano: Int) {
     println("$segundosC segundos")
 }
 
-fun str(hw: String = "Hellow World!") = println(hw.length)
+fun str(hw: String) = println(hw.length)
 
-fun cuboInt(num: Int = 4) = println(num * num * num)
+fun cuboInt(num: Int): Int = num * num * num
 
-fun convMilhasKM(milhas: Double = 5.0, km: Double = 1.6) = println(milhas * km)
+fun convMilhasKM(milhas: Float, km: Float): Float = milhas * km
 
 fun trocaLetras(str: String) {
     println(str.lowercase().replace("a", "x", true))
 }
 
+/* Ex 1 -> fun convertAnos(anos:Int) {
 
+    println("$anos anos equivalem a:")
+    prinln("${anos * 12} meses")
+    prinln("${anos * 365} dias")
+    prinln("${anos * 365 * 24} horas")
+    prinln("${anos * 365 * 24 * 60} minutos")
+    prinln("${anos * 365 * 24 * 60 * 60} segundos")
+}
+
+
+* */
 /*fun teste() {
     val ola = "Olá pessoas!"
     val replaceX = ola.replace("Olá pessoas!", "Olx pessoxs!")
