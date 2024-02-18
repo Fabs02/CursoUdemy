@@ -38,7 +38,7 @@ fun quadrado() {
     println("Informe o valor do lado 2: ")
     val lado2 = readLine()
 
-    if(lado1 != null && lado1 != "" && lado2 != null && lado2 != "") {
+    if (lado1 != null && lado1 != "" && lado2 != null && lado2 != "") {
         val x = lado1.toInt()
         val y = lado2.toInt()
 
@@ -87,13 +87,13 @@ fun evento() {
     val idade = readLine()
 
     if (idade != null && idade != "") {
-        if (idade.toInt() >= 18)
-        println("Acesso permitido")
-    } else {
-        println("Negado. Menores de idade não são permitidos")
-        return
+        if (idade.toInt() >= 18) {
+            println("Acesso permitido")
+        } else {
+            println("Negado. Menores de idade não são permitidos")
+            return
+        }
     }
-
     print("Insira o tipo do seu convite: ")
     var convite = readLine()
 
@@ -120,7 +120,7 @@ fun evento() {
         return
     }
 
-    if (idade.toInt() >= 18 && convite == "comum" || convite == "premium" || convite == "luxo" &&
+    if (idade?.toInt()!! >= 18 && convite == "comum" || convite == "premium" || convite == "luxo" &&
         codigoConvite == "XL" || codigoConvite == "XT"
     ) {
         println("Welcome :)")

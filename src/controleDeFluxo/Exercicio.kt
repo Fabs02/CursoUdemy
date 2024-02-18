@@ -4,7 +4,7 @@ fun main() {
     val bonus = ex1("Gerente")
     println(bonus)
 
-    val bonus2 = ex2("Coordenador", 2)
+    val bonus2 = ex2("Coordenador", 3)
     println(bonus2)
 
     val a = false

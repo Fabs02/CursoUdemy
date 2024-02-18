@@ -18,14 +18,14 @@ fun main() {
 
 fun maiorDeIdade(idade: Int) {
 
-   if (idade >= 18) {
-       println("Maior de idade")
+    if (idade >= 18) {
+        println("Maior de idade")
 
-   } else if (idade > 60){
-       println("Terceira idade")
-   } else {
-       println("Menor de idade")
-   }
+    } else if (idade > 60) {
+        println("Terceira idade")
+    } else {
+        println("Menor de idade")
+    }
 }
 
 fun saudacoes(dia: Boolean) = if (dia) {
